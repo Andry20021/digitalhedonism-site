@@ -25,7 +25,7 @@ export default function Home() {
 
       <Header poem={poem} />
 
-      <div className="flex flex-col items-start bg-white px-8 pt-2 pb-10">
+      <div className="flex flex-col items-start bg-white px-8 pt-4 pb-15">
         <div className="w-full flex justify-center">
           <ProductFrame items={colors} />
         </div>
