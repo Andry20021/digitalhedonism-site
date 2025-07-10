@@ -9,20 +9,17 @@ interface HeaderProps {
 export default function Header({
   className = 'mb-2 w-full h-[8rem] overflow-hidden text-6xl font-bold text-black flex items-center justify-center',
 }: HeaderProps) {
-  // move the poem here
   const poem = 
     "In the silent glow of dawn the city wakes • " +
     "Whispers trace the hollow streets • " +
     "Dreams unfurl on gentle breeze • " +
     "Hearts awaken, ever free • "
 
-  // initialize your lines *once* from the poem
   const [lines] = useState<string[][]>(
     () => poem.split(' • ').map((l) => l.split(' '))
   )
   const [current, setCurrent] = useState(0)
 
-  // cycle through them
   useEffect(() => {
     const wordCount = lines[current].length
     const duration = wordCount * 200 + 1000
@@ -32,7 +29,6 @@ export default function Header({
     return () => clearTimeout(timer)
   }, [current, lines])
 
-  // always render immediately
   const words = lines[current]
 
   return (
