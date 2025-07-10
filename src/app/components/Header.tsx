@@ -13,7 +13,7 @@ export default function Header({
   return (
     <>
       <header className={className}>
-        <div className="inline-block text-7xl sm:text-8xl md:text-[6rem] font-extrabold uppercase text-black marquee">
+        <div className="inline-block text-7xl sm:text-8xl md:text-[6rem] font-bold uppercase text-black marquee">
           {poem}
         </div>
       </header>

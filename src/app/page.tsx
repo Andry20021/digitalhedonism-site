@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full flex justify-center pt-8 mb-6">
+      <div className="w-full flex justify-center pt-8 mb-12">
         <div className="w-16 h-16 bg-blue-500" />
       </div>
 
